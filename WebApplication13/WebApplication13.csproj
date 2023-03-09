@@ -102,6 +102,7 @@
     <Compile Include="Models\FormPostViewModel.cs" />
     <Compile Include="Models\FurnitureDb.cs" />
     <Compile Include="Models\FurnitureIndexViewModel.cs" />
+    <Compile Include="Models\HiddenViewModel.cs" />
     <Compile Include="Models\NorthwindDb.cs" />
     <Compile Include="Models\SearchResultsViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -116,6 +117,8 @@
     <Content Include="Views\Furniture\ShowAdd.cshtml" />
     <Content Include="Views\Furniture\Add.cshtml" />
     <Content Include="Views\Furniture\Index.cshtml" />
+    <Content Include="Views\PostDemo\HiddenDemo.cshtml" />
+    <Content Include="Views\PostDemo\PostHidden.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -23,5 +23,20 @@ namespace WebApplication13.Controllers
 
             return View(vm);
         }
+
+        public ActionResult HiddenDemo()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult PostHidden(string hiddenValue)
+        {
+            HiddenViewModel vm = new HiddenViewModel
+            {
+                Value = hiddenValue
+            };
+            return View(vm);
+        }
     }
 }
