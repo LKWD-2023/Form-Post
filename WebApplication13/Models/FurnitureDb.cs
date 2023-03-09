@@ -62,5 +62,14 @@ namespace WebApplication13.Models
             return furnitureItems;
         }
 
+        public void Delete(int id)
+        {
+            SqlConnection connection = new SqlConnection(_connectionString);
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandText = "DELETE FROM Furniture WHERE Id = @id";
+            cmd.Parameters.AddWithValue("@id", id);
+            connection.Open();
+            cmd.ExecuteNonQuery();
+        }
     }
 }
