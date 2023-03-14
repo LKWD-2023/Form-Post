@@ -27,6 +27,7 @@
                             <th>Color</th>
                             <th>Price</th>
                             <th>In Stock</th>
+                            <th>Edit</th>
                             <th>Delete</th>
                         </tr>
                     </thead>
@@ -38,6 +39,9 @@
                                 <td>@item.Color</td>
                                 <td>@item.Price.ToString("C")</td>
                                 <td>@item.QuantityInStock</td>
+                                <td>
+                                    <a href="/furniture/edit?id=@item.Id" class="btn btn-warning">Edit</a>
+                                </td>
                                 <td>
                                     <form method="post" action="/furniture/delete">
                                         <input type="hidden" name="id" value="@item.Id" />

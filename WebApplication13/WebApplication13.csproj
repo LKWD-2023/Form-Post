@@ -99,6 +99,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\EditFurnitureViewModel.cs" />
     <Compile Include="Models\FormPostViewModel.cs" />
     <Compile Include="Models\FurnitureDb.cs" />
     <Compile Include="Models\FurnitureIndexViewModel.cs" />
@@ -115,10 +116,10 @@
     <Content Include="Views\PostDemo\Index.cshtml" />
     <Content Include="Views\PostDemo\FormPost.cshtml" />
     <Content Include="Views\Furniture\ShowAdd.cshtml" />
-    <Content Include="Views\Furniture\Add.cshtml" />
     <Content Include="Views\Furniture\Index.cshtml" />
     <Content Include="Views\PostDemo\HiddenDemo.cshtml" />
     <Content Include="Views\PostDemo\PostHidden.cshtml" />
+    <Content Include="Views\Furniture\Edit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
